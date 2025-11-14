@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
+
+/* --- Reset básico --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* --- Layout general --- */
+body {
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+  width: 180px;
+  background-color: #1A1C20;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 10px;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* --- Logo --- */
+.logo h2 {
+  font-family: 'Orbitron', sans-serif;  
+  font-size: 2rem;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+}
+
+/* --- Menú --- */
+.menu ol {
+  list-style: none;
+  width: 100%;
+}
+
+.menu li {
+  text-align: center;
+  margin-bottom: 66px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.menu img {
+  display: block;
+  object-fit: contain;
+  filter: brightness(0) invert(0.9);
+  transition: filter 0.3s;
+}
+
+.icon-home {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-vct {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-owcs {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-esl {
+  width: 38px;
+  height: 38px;
+}
+
+.icon-news {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-teams {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-login {
+  width: 33px;
+  height: 33px;
+}
+
+
+/* --- Hover --- */
+.menu a:hover {
+  color: #00bcd4;
+}
+
+.menu a:hover img {
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(150deg);
+}
+
+/* --- Contenido principal --- */
+.main-content {
+  flex: 1;
+  padding: 50px;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  color: #1e1f26;
+  margin-bottom: 15px;
+}
+
+.main-content p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* --- Main --- */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  min-height: 100px;
+  margin-left: 180px;
+}
+
+
+/* ====== HERO SECTION ====== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero__background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 20px;
+  animation: fadeIn 1.8s ease-out;
+}
+
+.hero__title {
+  font-size: 5rem;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 4px;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0 0 25px white;
+}
+
+.hero__subtitle {
+  font-size: 1.8rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 15px;
+  font-weight: 300;
+  color: #e0e0e0;
+}
+
+.hero__description {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== NEWS SECTION ===== */
+.news {
+  background: white;
+  padding: 80px 10%;
+  color: black;
+}
+
+.news__header {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.news__title {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: black;
+}
+
+.news__subtitle {
+  color: black;
+  font-weight: 300;
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+.news__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.news__card {
+  background: white;
+  filter: drop-shadow(0 0 0.75rem #b0b0b0);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news__card:hover {
+  transform: translateY(-8px);
+}
+
+.news__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: brightness(0.85);
+  transition: filter 0.3s ease;
+}
+
+.news__card:hover .news__image {
+  filter: brightness(1);
+}
+
+.news__content {
+  padding: 25px;
+}
+
+.news__headline {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: black;
+  font-weight: 600;
+}
+
+.news__text {
+  color: #bcbcbc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.news__link {
+  color: #DAA520;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.news__link:hover {
+  color: #D0A025;
+}
+
+/* ===== TEAMS PREVIEW SECTION ===== */
+.teams {
+  background: white;
+  padding: 80px 10%;
+  color: #fff;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.teams__header {
+  margin-bottom: 60px;
+}
+
+.teams__title {
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: black;
+}
+
+.teams__subtitle {
+  color: #bcbcbc;
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.teams__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 50px;
+  justify-items: center;
+}
+
+.team__card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team__card.sen:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px #E5062F;
+}
+
+.team__card.g2:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px black;
+}
+
+.team__card.mibr:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px #009C3B;
+}
+
+.team__card.fnc:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px #FF5900;
+}
+
+.team__card.tl:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px #001538;
+}
+
+.team__card.navi:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px #FFEE00;
+}
+
+.team__card.edg:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px #8b0f2e;
+}
+
+.team__card.blg:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px #34D0F4;
+}
+
+.team__card.xlg:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px #59A296;
+}
+
+.team__card.prx:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px #800080;
+}
+
+.team__card.t1:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px #E2012d;
+}
+
+.team__card.geng:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 25px #A58721;
+}
+/* LOGO DEL EQUIPO */
+.team__logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.team__card.sen:hover .team__logo {
+  filter: brightness(1.2) drop-shadow(0 0 8px #E5062F);
+}
+
+.team__card.g2:hover .team__logo {
+  filter: brightness(1.2) drop-shadow(0 0 8px black);
+}
+
+.team__card.mibr:hover .team__logo {
+  filter: brightness(1.2) drop-shadow(0 0 8px #009C3B);
+}
+
+.team__card.fnc:hover .team__logo {
+  filter: brightness(1.2) drop-shadow(0 0 8px #FF5900);
+}
+
+.team__card.tl:hover .team__logo {
+  filter: brightness(1.2) drop-shadow(0 0 8px #001538);
+}
+
+.team__card.navi:hover .team__logo {
+  filter: brightness(1.2) drop-shadow(0 0 8px #FFEE00);
+}
+
+.team__card.edg:hover .team__logo {
+  filter: brightness(1.2) drop-shadow(0 0 8px #8b0f2e);
+}
+
+.team__card.blg:hover .team__logo {
+  filter: brightness(1.2) drop-shadow(0 0 8px #34D0F4);
+}
+
+.team__card.xlg:hover .team__logo {
+  filter: brightness(1.2) drop-shadow(0 0 8px #59A296);
+}
+
+.team__card.prx:hover .team__logo {
+  filter: brightness(1.2) drop-shadow(0 0 8px #800080);
+}
+
+.team__card.t1:hover .team__logo {
+  filter: brightness(1.2) drop-shadow(0 0 8px #E2012d);
+}
+
+.team__card.geng:hover .team__logo {
+  filter: brightness(1.2) drop-shadow(0 0 8px #A58721);
+}
+
+/* NOMBRE DEL EQUIPO */
+.team__name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+}
+
+.teams button{
+  text-decoration: none;
+  margin-top: 40px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #DAA520;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.teams button a{
+  color: white;
+  text-decoration: none;
+}
+
+.teams button:hover {
+  background: #D0A025;
+}

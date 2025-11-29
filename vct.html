@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vct_style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>VCT</title>
+</head>
+<body>
+     <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+        <h2>OVT</h2>
+      </div>
+
+      <!-- BOTÓN HAMBURGUESA -->
+   <button class="menu-toggle" aria-label="Abrir menú">
+    &#9776;
+  </button>
+      <nav class="menu">
+        <ol class="menu-list">
+            <li><a href="#"><img src="assets/home.png" class="icon-home" alt="Home"><span>Home</span></a></li>
+            <li><a href="vct.html"><img src="assets/vct.png" class="icon-vct" alt="VCT"><span>VCT</span></a></li>
+            <li><a href="#"><img src="assets/owcs.png" class="icon-owcs" alt="OWCS"><span>OWCS</span></a></li>
+            <li><a href="#"><img src="assets/esl.png" class="icon-esl" alt="ESL"><span>ESL</span></a></li>
+            <li><a href="#"><img src="assets/news.png" class="icon-news" alt="News"><span>News</span></a></li>
+            <li><a href="#"><img src="assets/teams.png" class="icon-teams" alt="Teams"><span>Teams</span></a></li>
+            <li><a href="index.html"><img src="assets/login.png" class="icon-login" alt="Log In"><span>Log In</span></a></li>
+        </ol>
+      </nav>
+    </div>
+
+     <main class="main">
+    <!-- Hero Section -->
+    <section class="hero">
+    <video class="hero__background" autoplay muted loop playsinline>
+      <source src="assets/vct_bg.mp4" type="video/mp4" />
+    </video>
+
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <h1 class="hero__title">Valorant Champions Tour</h1>
+      <p class="hero__subtitle">The stage where stars are born</p>
+      <button><a href="">See the schedule</a></button>
+      <p>or</p>
+      <button><a href="">Partnered Teams</a></button>
+    </div>
+  </section>
+
+  <!-- Text Section -->
+
+  <section class ="text">
+    <h2>VCT reunites the best teams from across the world in a battle for glory. With regional leagues and international tournaments, the road to Champions define the elite of competitive VALORANT.</h2>
+  </section>
+
+    <!-- INTERNATIONAL EVENTS NAV SECTION -->
+<section class="events">
+  <div class="events__header">
+    <h2 class="events__title">Previous Tournaments</h2>
+  </div>
+
+  <!-- NAV BAR  -->
+  <nav class="events__nav">
+    <button class="event__tab active" data-event="kickoff">Kickoff</button>
+    <button class="event__tab" data-event="masters_bangkok">Masters Bangkok</button>
+    <button class="event__tab" data-event="stage-1">Stage 1</button>
+    <button class="event__tab" data-event="masters_toronto">Masters Toronto</button>
+    <button class="event__tab" data-event="stage-2">Stage 2</button>
+    <button class="event__tab" data-event="champions_paris">Champions Paris</button>
+  </nav>
+
+  <!-- KICKOFF -->
+<div class="events__details">
+  <div class="event__content active" id="kickoff">
+    <img src="assets/events/kickoff.webp" alt="Kickoff" class="event__image">
+
+    <div class="regional__grid">
+      <div class="region">
+        <h3>VCT Americas</h3>
+        <img src="assets/standings/americas_kickoff.png" alt="Americas Kickoff Standings">
+      </div>
+      <div class="region">
+        <h3>VCT EMEA</h3>
+        <img src="assets/standings/emea_kickoff.png" alt="EMEA Kickoff Standings">
+      </div>
+      <div class="region">
+        <h3>VCT Pacific</h3>
+        <img src="assets/standings/pacific_kickoff.png" alt="Pacific Kickoff Standings">
+      </div>
+      <div class="region">
+        <h3>VCT China</h3>
+        <img src="assets/standings/china_kickoff.png" alt="China Kickoff Standings">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MASTERS BANGKOK -->
+    <div class="event__content" id="masters_bangkok">
+      <img src="assets/events/masters_bangkok.jpg" alt="Masters Bangkok" class="event__image">
+      <div class="event__info">
+
+  <div class="winner">
+    <img src="assets/t1_chmps.jpg" alt="t1_champs" class="team__photo">
+    <p class="team__name">T1</p>
+  </div>
+
+  <div class="runner-up">
+    <img src="assets/g2_bangkok.jpg" alt="g2" class="team__photo">
+    <p class="team__name">G2 Esports</p>
+  </div>
+
+  <div class="others">
+    <div class="other-team">
+      <img src="assets/teams/vct_cn/edg.png" alt="EDG" class="team__logo">
+      <p>EDG</p>
+    </div>
+    <div class="other-team">
+      <img src="assets/teams/vct_emea/vit.png" alt="Vitality" class="team__logo">
+      <p>Vitality</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- STAGE 1 -->
+<div class="events__details">
+  <div class="event__content active" id="stage-1">
+    <img src="assets/events/stage1.jpeg" alt="Stage 1" class="event__image">
+
+    <div class="regional__grid">
+      <div class="region">
+        <h3>VCT Americas</h3>
+        <img src="assets/standings/americas_stage1.png" alt="Americas Stage 1 Standings">
+      </div>
+      <div class="region">
+        <h3>VCT EMEA</h3>
+        <img src="assets/standings/emea_stage1.png" alt="EMEA Stage 1 Standings">
+      </div>
+      <div class="region">
+        <h3>VCT Pacific</h3>
+        <img src="assets/standings/pacific_stage1.png" alt="Pacific Stage 1 Standings">
+      </div>
+      <div class="region">
+        <h3>VCT China</h3>
+        <img src="assets/standings/china_stage1.png" alt="China Stage 1 Standings">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MASTERS TORONTO -->
+    <div class="event__content" id="masters_toronto">
+      <img src="assets/events/masters_toronto.jpg" alt="Masters Toronto" class="event__image">
+      <div class="event__info">
+
+  <div class="winner">
+    <img src="assets/prx_champs.webp" alt="Paper Rex" class="team__photo">
+    <p class="team__name">Paper Rex</p>
+  </div>
+
+  <div class="runner-up">
+    <img src="assets/fnc_toronto.jpg" alt="Fnatic" class="team__photo">
+    <p class="team__name">Fnatic</p>
+  </div>
+
+  <div class="others">
+    <div class="other-team">
+      <img src="assets/teams/vct_cn/wol.png" alt="Wolves Esports" class="team__logo">
+      <p>Wolves</p>
+    </div>
+    <div class="other-team">
+      <img src="assets/teams/vct_americas/g2.png" alt="G2" class="team__logo">
+      <p>G2</p>
+    </div>
+    <div class="other-team">
+      <img src="assets/teams/vct_pacific/geng.png" alt="GenG" class="team__logo">
+      <p>GenG</p>
+    </div>
+    <div class="other-team">
+      <img src="assets/teams/vct_americas/sen.png" alt="Sentinels" class="team__logo">
+      <p>Sentinels</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- STAGE 2 -->
+<div class="events__details">
+  <div class="event__content active" id="stage-2">
+    <img src="assets/events/stage2.webp" alt="Kickoff" class="event__image">
+
+    <div class="regional__grid">
+      <div class="region">
+        <h3>VCT Americas</h3>
+        <img src="assets/standings/americas_stage2.png" alt="Americas Stage 2 Standings">
+      </div>
+      <div class="region">
+        <h3>VCT EMEA</h3>
+        <img src="assets/standings/emea_stage2.png" alt="EMEA Stage 2 Standings">
+      </div>
+      <div class="region">
+        <h3>VCT Pacific</h3>
+        <img src="assets/standings/pacific_stage2.png" alt="Pacific Stage 2 Standings">
+      </div>
+      <div class="region">
+        <h3>VCT China</h3>
+        <img src="assets/standings/china_stage2.png" alt="China Stage 2 Standings">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAMPIONS PARIS -->
+    <div class="event__content" id="champions_paris">
+      <img src="assets/events/champions_paris.jpg" alt="Champions Paris" class="event__image">
+      <div class="event__info">
+
+  <div class="winner">
+    <img src="assets/nrg_champs.webp" alt="Nrg" class="team__photo">
+    <p class="team__name">NRG</p>
+  </div>
+
+
+  <div class="runner-up">
+    <img src="assets/fnc_paris.webp" alt="Fnatic" class="team__photo">
+    <p class="team__name">Fnatic</p>
+  </div>
+
+  
+  <div class="others">
+    <div class="other-team">
+      <img src="assets/teams/vct_pacific/drx.png" alt="DRX" class="team__logo">
+      <p>DRX</p>
+    </div>
+    <div class="other-team">
+      <img src="assets/teams/vct_pacific/prx.png" alt="Paper Rex" class="team__logo">
+      <p>Paper Rex</p>
+    </div>
+    <div class="other-team">
+      <img src="assets/teams/vct_americas/mibr.png" alt="Mibr" class="team__logo">
+      <p>Mibr</p>
+    </div>
+    <div class="other-team">
+      <img src="assets/teams/vct_emea/th.png" alt="Team Heretics" class="team__logo">
+      <p>Team Heretics</p>
+    </div>
+    <div class="other-team">
+      <img src="assets/teams/vct_americas/g2.png" alt="G2" class="team__logo">
+      <p>G2 Esports</p>
+    </div>
+    <div class="other-team">
+      <img src="assets/teams/vct_emea/gia.svg" alt="GiantX" class="team__logo">
+      <p>GiantX</p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+</section>
+
+<footer class="footer">
+  <div class="footer__left">
+    <ul class="footer__links">
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">COOKIE POLICY</a></li>
+      <li><a href="#">PRIVACY POLICY</a></li>
+      <li><a href="#">TERMS & CONDITIONS</a></li>
+    </ul>
+
+    <p class="footer__copy">© 2025 OVERTIME. All rights reserved.</p>
+  </div>
+
+  <div class="footer__right">
+    <h4>FOLLOW US ON:</h4>
+    <div class="footer__social">
+      <a href="#"><img src="assets/social/x.png" alt="X"></a>
+      <a href="#"><img src="assets/social/fb.png" alt="Facebook"></a>
+      <a href="#"><img src="assets/social/discord.png" alt="Discord"></a>
+      <a href="#"><img src="assets/social/yt.png" alt="YouTube"></a>
+      <a href="#"><img src="assets/social/twitch.png" alt="Twitch"></a>
+      <a href="#"><img src="assets/social/ig.png" alt="Instagram"></a>
+      <a href="#"><img src="assets/social/tiktok.png" alt="Tiktok"></a>
+    </div>
+  </div>
+</footer>
+
+</main>
+<script src="events.js"></script>
+<script src="menu-burger.js"></script>
+</body>
+</html>
